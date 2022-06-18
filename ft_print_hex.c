@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_print_hex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/07 17:37:16 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/18 16:46:48 by aceralin         ###   ########.fr       */
+/*   Created: 2022/06/18 15:52:53 by aceralin          #+#    #+#             */
+/*   Updated: 2022/06/18 19:10:45 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+# include "libftprintf.h"
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
-
-#include <stdarg.h>
-#include <unistd.h>
-#include <stdio.h>
-
-int ft_printf(const char *, ...);
-int	ft_print_str(char *s);
-int ft_print_nbr( int n);
-
-#endif
+int ft_print_hex( nbr, type)
+{
+    
+}
