@@ -6,7 +6,7 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 17:37:16 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/18 16:46:48 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/20 18:43:11 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,8 @@
 int ft_printf(const char *, ...);
 int	ft_print_str(char *s);
 int ft_print_nbr( int n);
+int ft_print_unsigned( unsigned int nb);
 
+int	ft_putchar(char c);
+int ft_print_hex( unsigned int nbr, char type);
 #endif

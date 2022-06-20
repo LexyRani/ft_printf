@@ -6,8 +6,13 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/18 15:52:45 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/18 18:10:57 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/20 15:22:09 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "libftprintf.h"
+
+int	ft_print_ptr()
+{
+	
+}
