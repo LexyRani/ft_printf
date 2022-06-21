@@ -6,17 +6,16 @@
 #    By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/02 21:00:49 by aceralin          #+#    #+#              #
-#    Updated: 2022/06/20 18:50:08 by aceralin         ###   ########.fr        #
+#    Updated: 2022/06/21 18:10:40 by aceralin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS			= ${addsuffix .c, \
-					ft_printf \
-					ft_print_str\
-					ft_print_nbr \
-					ft_print_unsigned \
-					ft_print_hex \
-					}
+SRCS			=   ft_printf.c\
+					ft_print_str.c\
+					ft_print_nbr.c \
+					ft_print_unsigned.c \
+					ft_print_hex.c \
+					ft_print_ptr.c\
 
 OBJS			= $(SRCS:.c=.o)
 
