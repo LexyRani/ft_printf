@@ -6,7 +6,7 @@
 #    By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/02 21:00:49 by aceralin          #+#    #+#              #
-#    Updated: 2022/06/21 18:10:40 by aceralin         ###   ########.fr        #
+#    Updated: 2022/06/22 14:28:20 by aceralin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ NAME			= libftprintf.a
 all:			$(NAME)
 
 $(NAME):		$(OBJS)
-				ar rcs $(NAME) $(OBJS) libftprintf.h
+				ar rcs $(NAME) $(OBJS) ft_printf.h
 
 clean:
 				$(RM) $(OBJS)

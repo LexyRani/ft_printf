@@ -6,11 +6,11 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/18 15:52:50 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/21 18:06:13 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/22 14:36:12 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libftprintf.h"
+# include "ft_printf.h"
 
 int	ft_putchar(char c)
 {
@@ -27,7 +27,7 @@ int ft_print_nbr( int nb)
     if (nb < 0)
     {
         nb = nb * (-1);
-        ft_putchar('-');
+        len += ft_putchar('-');
     }
     if (nb > 9)
     {

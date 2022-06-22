@@ -6,11 +6,11 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 14:59:56 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/21 18:39:28 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/22 16:11:36 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libftprintf.h"
+# include "ft_printf.h"
 
 int ft_print_char (int c)
 {
@@ -59,16 +59,20 @@ int	ft_printf(const char *str, ...)
 	va_end(list_args);
 	return(len);
 }
-
-int	main()
+/*
+int	main(void)
 {
 	//int a = 'c';
 	//int	b = -1 ;
-	//int c = 59;
+	//int c = -1;
 	//char d = '%';
-	//char *e = "aeryjj";
-	printf("%d",printf("1: \n"));
-	printf("taille %d",ft_printf("2:\n"));
+	char *e = NULL;
+	
+	ft_printf("%d\n",printf("%s\n", e));
+	printf("%d\n",ft_printf("%s\n", e));
+	printf("%d\n",printf("%s\n", e));
+	ft_printf("%d\n",ft_printf("%s\n", e));
 	
 	return(0);
 }
+*/

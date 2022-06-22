@@ -6,21 +6,23 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/18 15:45:02 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/18 18:11:16 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/22 16:16:43 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libftprintf.h"
+# include "ft_printf.h"
 
 int	ft_print_str(char *s)
 {
 	int	i;
 
 	i = 0;
+	if (!s)
+		return(write(1, "(null)", 6));
 	while (s[i] != '\0')
 	{
 		write(1, &s[i], 1);
 		i++;
 	}
-    return(i);
+	return(i);
 }

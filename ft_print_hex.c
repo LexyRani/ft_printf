@@ -6,19 +6,19 @@
 /*   By: aceralin <aceralin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/18 15:52:53 by aceralin          #+#    #+#             */
-/*   Updated: 2022/06/21 18:01:34 by aceralin         ###   ########.fr       */
+/*   Updated: 2022/06/22 15:56:19 by aceralin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libftprintf.h"
+# include "ft_printf.h"
 
 
-int ft_change_base(int nbr, char *base , int bsize)
+int ft_change_base(unsigned int nbr, char *base , int bsize)
 {
     int len;
 
     len = 0;
-    if(nbr > 16)
+    if(nbr >= 16)
        len += ft_change_base( nbr/ 16, base, 16);
     len += ft_putchar(base[nbr % bsize]);
     return (len);
